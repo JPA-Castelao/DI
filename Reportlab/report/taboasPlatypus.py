@@ -14,7 +14,15 @@ actM = ['Mañán', "Cole", "Correr", '-', '-', '-', 'Estudar', 'Traballar', 'Cor
 actT = ['Tarde', 'Traballer', 'Cole', 'Cole', 'Clases', 'Clases', 'Traballar']
 actN = ['Noite', '-', 'Traballar', 'Traballar', '-', '-', '-']
 taboa = Table([[cabecera, actM, actT, actN]])
-taboa.setStyle([('TEXTCOLOR', (1, -4), (7, -4), colors.red), ('TEXTCOLOR', (0, 0), (0, 3), colors.blue)])
+taboa.setStyle([
+                ('TEXTCOLOR', (1, -4), (7, -4), colors.red),
+                ('TEXTCOLOR', (0, 0), (0, 3), colors.blue),
+                ("BOX", (0, 0), (-1, -1), 1, colors.blue),
+                ('INNEGRID', (1, -1), (-1, -1), 0.25, colors.lightgrey),
+                ('LINEBELOW', (1, -1), (0, 1), 0.25, colors.lightgrey)
+
+                ])
+
 guion = []
 
 guion.append(taboa)
