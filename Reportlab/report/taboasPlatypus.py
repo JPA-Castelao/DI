@@ -13,18 +13,18 @@ cabecera = ['', 'Luns', 'Martes', 'Miercoles', 'Xoves', 'Venres', 'Sábado', 'Do
 actM = ['Mañán', "Cole", "Correr", '-', '-', '-', 'Estudar', 'Traballar', 'Correr', ]
 actT = ['Tarde', 'Traballer', 'Cole', 'Cole', 'Clases', 'Clases', 'Traballar']
 actN = ['Noite', '-', 'Traballar', 'Traballar', '-', '-', '-']
-taboa = Table([[cabecera, actM, actT, actN]])
-taboa.setStyle([
-                ('TEXTCOLOR', (1, -4), (7, -4), colors.red),
-                ('TEXTCOLOR', (0, 0), (0, 3), colors.blue),
-                ("BOX", (0, 0), (-1, -1), 1, colors.blue),
-                ('INNEGRID', (1, -1), (-1, -1), 0.25, colors.lightgrey),
-                ('LINEBELOW', (1, -1), (0, 1), 0.25, colors.lightgrey)
+taboa = Table([cabecera, actM, actT, actN])
+taboa.setStyle(([
+    ('TEXTCOLOR', (1, -4), (7, -4), colors.red),
+    ('TEXTCOLOR', (0, 0), (0, 3), colors.blue),
+    ("BOX", (0, 0), (-1, -1), 1, colors.blue),
+    ('INNERGRID', (1, -1), (-1, -1), 0.25, colors.lightgrey),
+    ('ALIGN', (0, 0), (-1, -1), 'CENTER'),
 
-                ])
+]))
 
 guion = []
 
 guion.append(taboa)
-doc = SimpleDocTemplate("taboasPlatypus.py", pagesize=A4, showBoundary=0)
+doc = SimpleDocTemplate(r"E:\DAM\DI\Reportlab\reporttaboasPlatypus.pdf", pagesize=A4, showBoundary=0)
 doc.build(guion)
