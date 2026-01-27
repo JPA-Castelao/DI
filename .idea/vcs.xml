@@ -2,5 +2,13 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/REPASO-DI-BOMBA" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/ReportLabMauro" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Reportlab/report/ReporLabMauro" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Reportlab/report/samuu" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Samuuuu" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/exemplosGtk" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/exemplosGtk2" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/exemplosQt" vcs="Git" />
   </component>
 </project>
